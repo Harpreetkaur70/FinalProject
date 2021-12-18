@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/dark_seagreen"
+    tools:context=".ui.cart.Cart_Items">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         />
+
+    <TextView
+        android:id="@+id/total_txt"
+        style="@style/TextviewStyle"
+
+        android:text="Total"
+        android:textSize="30sp"
+       android:layout_below="@+id/recyclerView"/>
+
+    <EditText
+        android:id="@+id/total"
+       style="@style/TextviewStyle"
+        android:ems="10"
+        android:inputType="number"
+
+
+        android:textSize="20sp"
+   android:layout_below="@+id/recyclerView"
+        android:layout_toRightOf="@+id/total_txt"/>
+
+    <Button
+        android:id="@+id/order"
+       style="@style/TextviewStyle"
+       android:layout_alignParentRight="true"
+        android:text="Place Order"
+        android:textSize="20sp"
+       android:layout_below="@+id/total_txt"/>
+
+</RelativeLayout>
